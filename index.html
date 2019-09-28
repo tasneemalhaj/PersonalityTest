@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Personality Test</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<h1>Welcom to TAZ Personality Test</h1>
+	<h3>Please Fill Your Information</h3>
+
+	<div class="info">
+		<div id="inputFields">
+			<label>Name:</label>
+			<input type="text" name="Name" placeholder="Your Name ..." id="name" class="input">
+
+			<label>Age:</label>
+			<input type="number" name="Age" placeholder="Your Age ..." id="age" class="input">
+
+			<label>Email:</label>
+			<input type="email" name="Email" placeholder="Your Email ..." id="email" class="input">
+
+			<!-- <button id="submit">Submit</button> -->
+			<!-- <p id="msg"></p> -->
+		</div>		
+
+	</div>
+
+	<button id="start" >Start the Test</button>
+
+
+	<!-- Quiz Section -->
+
+	<div class="questions">
+		<div id="quiz">
+	  <h1 id="qText"></h1>
+	  
+	  <div id="choices">
+	  	<form>
+			  <lable id = l1 class="lables" for = "ch1"></lable>
+			  <input type="radio" name="ch" id="ch1" class="radioButtons">
+			  <lable id = l2 class="lables" for = "ch2"></lable>
+			  <input type="radio" name="ch" id="ch2" class="radioButtons">
+			  <lable id = l3 class="lables" for = "ch3"></lable>
+			  <input type="radio" name="ch" id="ch3" class="radioButtons">
+			  <lable id = l4 class="lables" for = "ch4"></lable>
+			  <input type="radio" name="ch" id="ch4" class="radioButtons">
+		  
+	   </form>
+	  </div>
+
+	  <button id="next" >Next Question</button>
+	  <button id="prev" >Previous</button>
+	  <button id="submit" >Submit Answers</button>
+	  </div>
+
+	  <div id="resultDiv">
+		  <h1 id="resultsMessage">Your Personality is:</h1>
+		  <h2 id="personality"></h2>
+		  <button id="retry" >Retry</button>
+	  </div>
+
+	</div>
+
+	
+
+	
+
+	<script type="text/javascript" src="myScript.js"></script>
+
+</body>
+
+</html>
